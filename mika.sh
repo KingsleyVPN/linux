@@ -477,14 +477,14 @@ systemctl enable openvpn
 
 pythonproxyinstall () {
 apt-get install netcat lsof php php-mysqli php-mysql php-gd php-mbstring python -y > /dev/null 2>&1
-wget -O /bin/proxy.py https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/proxy-q
-wget -O /bin/proxy2.py https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/proxy2 -q
-wget -O /bin/proxy3.py https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/proxy -q
-wget -O /bin/auto https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/auto -q
+wget -O /bin/proxy.py https://raw.githubusercontent.com/KingsleyVPN/linux/main/proxy-q
+wget -O /bin/proxy2.py https://raw.githubusercontent.com/KingsleyVPN/linux/main/proxy2 -q
+wget -O /bin/proxy3.py https://raw.githubusercontent.com/KingsleyVPN/linux/main/proxy -q
+wget -O /bin/auto https://raw.githubusercontent.com/KingsleyVPN/linux/main/auto -q
 chmod +x /bin/auto
 /bin/auto;
 
-wget https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/badvpn-udpgw -q
+wget https://raw.githubusercontent.com/KingsleyVPN/linux/main/badvpn-udpgw -q
 mv -f badvpn-udpgw /bin/badvpn-udpgw
 chmod 777 /bin/badvpn-udpgw
 
@@ -531,7 +531,7 @@ Query="SELECT user_name FROM users WHERE user_name='$username' AND auth_vpn=md5(
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$username" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
-wget -O /usr/local/sbin/ssh.php https://github.com/freenetsapinas/mikscripts/blob/main/prem.sh -q
+wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/KingsleyVPN/linux/main//prem.sh -q
 }
 
 vipcategory () {
@@ -542,7 +542,7 @@ Query="SELECT user_name FROM users WHERE user_name='$username' AND auth_vpn=md5(
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$username" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
-wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/vip.sh -q
+wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/KingsleyVPN/linux/main/vip.sh -q
 }
 
 privatecategory () {
@@ -553,7 +553,7 @@ Query="SELECT user_name FROM users WHERE user_name='$username' AND auth_vpn=md5(
 user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$username" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
-wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/freenetsapinas/mikscripts/main/private.sh -q
+wget -O /usr/local/sbin/ssh.php https://raw.githubusercontent.com/KingsleyVPN/linux/main/private.sh -q
 }
 
 

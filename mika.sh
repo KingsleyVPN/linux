@@ -495,11 +495,12 @@ crontab -u sandok -r
 
 display_menu () {
 clear
-echo -e "${RED}#############################################"
-echo -e "#           Debian9 Insaller                #"
-echo -e "#     Setup by: Michaele Abalos         #"
-echo -e "#       Server System: WhiteMask Team             #"
-echo -e "#       owner: Michaele Abalos            #"
+echo -e "${GREEN}#############################################"
+echo -e "================================================="
+echo -e "#           SCRIPT MODIFIED BY: KINGSLEY VPN           #"
+echo -e "================================================="
+echo -e "#                 👑 LEAKERS KING 👑                  #"
+echo -e "================================================="
 echo -e "#############################################${RESET}"
 }
 

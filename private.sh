@@ -2,10 +2,10 @@
 error_reporting(E_ERROR | E_PARSE);
 ini_set('display_errors', '1');
 
-$DB_host = '51.222.15.94';
-$DB_user = 'sql_panel_daddyj';
-$DB_pass = 'aTHCh8KzSkmtmB3c';
-$DB_name = 'sql_panel_daddyj';
+$DB_host = 'localhost';
+$DB_user = 'radzglob_sponsored';
+$DB_pass = 'radzglob_sponsored';
+$DB_name = 'radzglob_sponsored';
 
 $mysqli = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
 if ($mysqli->connect_error) {

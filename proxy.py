@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-# SOcks By Michaele Abalos
+# SOcks By Leakers King
 import socket, threading, thread, select, signal, sys, time
 from os import system
 system("clear")
@@ -13,7 +13,7 @@ except:
 PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
-MSG = 'Powered By: Michaele Abalos'
+MSG = 'Powered By: Leakers King'
 COR = '<font color="green">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
